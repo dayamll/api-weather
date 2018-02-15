@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   searchWeather();
   let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   let btnWeek = $('.weather');
@@ -23,4 +23,26 @@ $(document).ready(function() {
       week.append(model);
     });
   }
+
+  function searchWeather() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        let myPosition = {
+          lng: position.coords.longitude,
+          lat: position.coords.latitude
+        };
+
+        var apiLinkDS = `https://api.darksky.net/forecast/b55bd126b917d17d590e4e7f025aaccb/${myPosition.lat},${myPosition.lng}?units=si`;
+        var proxy = 'https://cors-anywhere.herokuapp.com/';
+
+        $.ajax({
+          url: proxy + apiLinkDS,
+          success: getWeather
+        });
+      });
+    } else {
+      console.log('Existe un error en el sistema');
+    }
+  }
+  
 });
