@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     daysWeather.forEach((element, index) => {
       let model = `<div class = "row">
-      <div class="col-3"><img class="w100" src="../assets/images/${element.icon}.png"></div>
+      <div class="col-3"><img class="w60" src="../assets/images/${element.icon}.png"></div>
       <div class="col-3 space-title"><p>${days[index]}</p></div>
       <div class="col-3 space-title"><p>${element.temperatureMin}°</p></div>
       <div class="col-3 space-title"><p>${element.temperatureMax}°</p></div>
@@ -43,9 +43,5 @@ $(document).ready(function() {
     } else {
       console.log('Existe un error en el sistema');
     }
-  }
-
-  function searchDay() {
-    window.location.href = 'view/days.html';
   }
 });
