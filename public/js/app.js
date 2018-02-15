@@ -15,10 +15,10 @@ $(document).ready(function() {
 
     daysWeather.forEach((element, index) => {
       let model = `<div class = "row">
-      <div class="col-3"><img class="w60" src="../assets/images/${element.icon}.png"></div>
-      <div class="col-3 space-title"><p>${days[index]}</p></div>
-      <div class="col-3 space-title"><p>${element.temperatureMin}°</p></div>
-      <div class="col-3 space-title"><p>${element.temperatureMax}°</p></div>
+      <div class="col-2"><img class="w100" src="../assets/images/${element.icon}.png"></div>
+      <div class="col-4"><p class="font-1">${days[index]}</p></div>
+      <div class="col-2"><p class="font-1">${element.temperatureMin}°</p></div>
+      <div class="col-2"><p class="font-1">${element.temperatureMax}°</p></div>
       </div>`;
       week.append(model);
     });
