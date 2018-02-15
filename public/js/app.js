@@ -1,15 +1,35 @@
 $(document).ready(function () {
   searchWeather();
-  let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   let btnWeek = $('.weather');
   btnWeek.on('click', searchDay);
 
   function getWeather(data) {
+    // Para days.html
     let weatherWeek = $('.icon-weather');
-    let week = $('#container-days');
+    let wind = $('#wind');
+    let humidity = $('#humidity');
+    let uvIndex = $('#uv-index');
+    let pressure = $('#pressure');
+    let summary = $('#summary');
     let dayResponse = data.currently;
+    let icon = dayResponse.icon;
+    console.log(dayResponse);
+    temperature.text(dayResponse.temperature + '°');
+    wind.text(dayResponse.windSpeed + 'm/s');
+    humidity.text(dayResponse.humidity + '%');
+    uvIndex.text(dayResponse.uvIndex);
+    pressure.text(dayResponse.pressure + 'hPa');
+    summary.text(dayResponse.summary);
+
+
+    let responseWeek = data.daily.data;
+
+    let week = $('#container-days');
+
     let weekResponse = data.daily.data;
     let iconWeather = dayResponse.icon;
+
     weatherWeek.attr('src', `assets/images/${dayResponse.icon}.png`);
     let daysWeather = weekResponse.slice(0, 7);
 
@@ -23,7 +43,7 @@ $(document).ready(function () {
       week.append(model);
     });
   }
-
+  // Geolocation
   function searchWeather() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
