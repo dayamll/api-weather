@@ -1,14 +1,7 @@
 body {
-<<<<<<< HEAD
   background: url("https://source.unsplash.com/random");
   color: #fff;
   background-position: center center;
-=======
-  background-image: url('../assets/images/fondo.gif');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
->>>>>>> d49ce5bb7defdb37b1f7e5ec125599b0520a1635
   background-size: cover;
   opacity: 0.8;
   filter: alpha(opacity=50);
