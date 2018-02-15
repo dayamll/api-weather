@@ -44,5 +44,8 @@ $(document).ready(function () {
       console.log('Existe un error en el sistema');
     }
   }
-  
+
+  function searchDay() {
+    window.location.href = 'view/days.html';
+  }
 });
