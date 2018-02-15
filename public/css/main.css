@@ -1,30 +1,54 @@
 body {
-  background-image: url('../assets/images/flower.jpg');
+  background-image: url('../assets/images/fondo.gif');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+}
+
+.section-bgd {
+  background-image: url('../assets/images/fondo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.section-bgd2 {
+  background-image: url('../assets/images/fondo2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130vh;
+  width: 100%;
 }
 
 .box-container {
-  background-color: rgba(255, 255, 255, 0.308);
+  background-color: rgba(255, 255, 255, 0);
   width: 500px;
   height: 400px;
-  border: 15px solid rgba(0, 0, 0, 0.329);
+  border: 15px solid rgba(0, 0, 0, 0);
+}
+
+.margin {
+  background-color: rgba(255, 255, 255, 0.575);
+  width: 500px;
+  height: 400px;
+  border: 15px solid rgba(0, 0, 0, 0.432);
   border-radius: 10px;
-  float: right;
-  margin: 110px;
+  margin: 130px 200px 10px 430px;
 }
 
 .btn {
-  background-color: rgba(226, 213, 23, 0.692);
+  background-color: rgba(255, 234, 0, 0.726);
   border: 2px solid rgba(0, 0, 0, 0.562);
   /* color: white; */
   margin: 10px;
 }
 
 .btn:hover {
-  background-color: rgba(247, 243, 7, 0.692);
+  background-color: #ffc107;
 }
 
 .title {
@@ -33,14 +57,36 @@ body {
 }
 
 .box-container2 {
-  background-color: rgba(255, 255, 255, 0.603);
+  background-color: rgba(255, 255, 255, 0);
   width: 700px;
   height: 120vh;
-  /* border: 15px solid rgba(0, 0, 0, 0.411); */
+}
+
+.margin2 {
+  background-color: rgba(255, 255, 255, 0.575);
+  width: 700px;
+  height: 130vh;
+  border: 10px solid rgba(0, 0, 0, 0.432);
   border-radius: 10px;
-  margin: 100px 200px 10px 330px;
+  margin-left: 320px;
 }
 
 img {
   width: 100px;
+}
+
+.space-title {
+  margin-top: 45px;
+  font-weight: 900;
+}
+
+.padding {
+  padding-left: 30px;
+  color: black;
+}
+
+.style {
+  /* float: right; */
+  margin-left: 280px;
+  font-weight: 600;
 }

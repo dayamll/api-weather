@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
   searchWeather();
   let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   let btnWeek = $('.weather');
@@ -16,9 +16,9 @@ $(document).ready(function () {
     daysWeather.forEach((element, index) => {
       let model = `<div class = "row">
       <div class="col-3"><img class="w100" src="../assets/images/${element.icon}.png"></div>
-      <div class="col-3"><p>${days[index]}</p></div>
-      <div class="col-3"><p>${element.temperatureMin}°</p></div>
-      <div class="col-3"><p>${element.temperatureMax}°</p></div>
+      <div class="col-3 space-title"><p>${days[index]}</p></div>
+      <div class="col-3 space-title"><p>${element.temperatureMin}°</p></div>
+      <div class="col-3 space-title"><p>${element.temperatureMax}°</p></div>
       </div>`;
       week.append(model);
     });
