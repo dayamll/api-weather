@@ -8,7 +8,8 @@
 
 ¿Has visto que los sistemas operativos móviles vienen con una APP de predicción del clima? ¡Vamos a hacer la nuestra! Para ello, usaremos la API de Dark Sky y esperemos llegues a usar un API de imágenes como Flickr, Unsplash u otro.
 
-  ![Device](public/assets/images/device.png)
+   ![device](https://user-images.githubusercontent.com/32303306/36362813-e00b745a-1505-11e8-892e-d46e06b2b62a.png)
+
 
   ![Device](public/assets/images/view2.png?style=center)
 
