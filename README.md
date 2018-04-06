@@ -1,12 +1,17 @@
-# WEATHER
+# App-Weather
 ***
-## Aplicación Web y Mobile que predice el clima.
+App-Weather es apto para todo publico, que tenga el deseo de saber la temperatura en el que se encuentra o de la semana, es una aplicacion rsponsive que predice el clima.
 
    ![device](https://user-images.githubusercontent.com/32303306/36362813-e00b745a-1505-11e8-892e-d46e06b2b62a.png)
 
 ***
+Desarrolladoras
 
-### Desarrollo de la aplicación
+* **Margarita Sutta:** [GitHub Account](https://github.com/margaritasj).
+* **Dayam Llerena:** [GitHub Account](https://github.com/dayamll).
+
+
+Desarrollo de la aplicación
 
 1. Creación de la clave del Dark Sky API :
 
