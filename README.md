@@ -5,11 +5,8 @@ App-Weather es apto para todo publico, que tenga el deseo de saber la temperatur
    ![device](https://user-images.githubusercontent.com/32303306/36362813-e00b745a-1505-11e8-892e-d46e06b2b62a.png)
 
 ***
-Desarrolladoras
 
-* **Margarita Sutta:** [GitHub Account](https://github.com/margaritasj).
-* **Dayam Llerena:** [GitHub Account](https://github.com/dayamll).
-
+### Desarrollado para [Laboratoria](http://laboratoria.la) 
 
 Desarrollo de la aplicación
 
@@ -40,3 +37,8 @@ Desarrollo de la aplicación
 7. API de Geolocation
 
 ***
+
+Desarrolladoras
+
+* **Margarita Sutta:** [GitHub Account](https://github.com/margaritasj).
+* **Dayam Llerena:** [GitHub Account](https://github.com/dayamll).
